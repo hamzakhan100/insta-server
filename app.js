@@ -23,7 +23,7 @@ const corsOptions ={
 }
 app.use(cors(corsOptions));
 
-app.use(cors());
+
 // Compress the HTTP response sent back to a client
 app.use(compression()); //Compress all routes
 
@@ -56,6 +56,6 @@ app.disable("x-powered-by");
 
 app.listen(PORT, () => {
   console.log(
-    `Server is running in ${process.env.NODE_ENV} node, under port ${PORT}.`
+    `Server is running in  node, under port ${PORT}.`
   );
 });
