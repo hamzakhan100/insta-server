@@ -16,12 +16,8 @@ connectDB();
 const app = express();
 // Set up cors to allow us to accept requests from our client
 
-const corsOptions ={
-    origin:'http://localhost:3000', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-}
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 
 // Compress the HTTP response sent back to a client
